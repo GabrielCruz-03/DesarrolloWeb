@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Contador</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Mi Contador</h1>
+    
+    <div class="caja">
+        <div class="numero-grande" id="numeroPrincipal">0</div>
+        
+        <div>
+            <div>
+                <button onclick="incrementar()">+1</button>
+                <div class="contador-boton">Veces que sumé: <span id="contadorInc">0</span></div>
+            </div>
+            <div>
+                <button onclick="decrementar()">-1</button>
+                <div class="contador-boton">Veces que resté: <span id="contadorDec">0</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="logica.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.caja {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px auto;
+    width: 1000px;
+    max-width: 95%;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 0;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid gray;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-group small {
+    display: block;
+    color: #666;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.form-actions button {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid black;
+}
+
+.form-actions button:hover {
+    background-color: #e0e0e0;
+}
+
+#btnGuardar {
+    background-color: #d4edda;
+}
+
+#btnCancelar {
+    background-color: #f8d7da;
+}
+
+.busqueda-filtros {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+}
+
+.busqueda, .filtros {
+    flex: 1;
+    text-align: left;
+}
+
+.busqueda label, .filtros label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.busqueda input, .filtros select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid gray;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.tarjetas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+    max-height: 600px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+.tarjeta-empleado {
+    border: 2px solid black;
+    padding: 15px;
+    background-color: white;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.tarjeta-empleado:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 5px 0 rgba(0,0,0,0.1);
+}
+
+.tarjeta-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tarjeta-imagen {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid black;
+    object-fit: cover;
+}
+
+.tarjeta-nombre {
+    flex: 1;
+}
+
+.tarjeta-nombre h3 {
+    margin: 0;
+    color: #333;
+}
+
+.tarjeta-nombre p {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.tarjeta-info {
+    margin-bottom: 15px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px dotted #eee;
+}
+
+.info-item .label {
+    font-weight: bold;
+    color: #555;
+}
+
+.info-item .value {
+    color: #333;
+}
+
+.tarjeta-acciones {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-editar, .btn-eliminar {
+    flex: 1;
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid black;
+    font-size: 14px;
+    text-align: center;
+}
+
+.btn-editar {
+    background-color: #d4edda;
+}
+
+.btn-editar:hover {
+    background-color: #c3e6cb;
+}
+
+.btn-eliminar {
+    background-color: #f8d7da;
+}
+
+.btn-eliminar:hover {
+    background-color: #f5c6cb;
+}
+
+.total-empleados {
+    text-align: right;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+}
+
+/* Teléfono cubano */
+.telefono-cubano::before {
+    content: "+53";
+    margin-right: 5px;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .busqueda-filtros {
+        flex-direction: column;
+    }
+}
